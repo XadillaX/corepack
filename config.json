@@ -89,6 +89,28 @@
                     }
                 }
             }
+        },
+        "cnpm": {
+            "default": "7.0.0",
+            "transparent": {
+              "commands": [
+                ["cnpm", "init"],
+                ["npx"]
+              ]
+            },
+            "ranges": {
+                "*": {
+                    "url": "https://registry.npmjs.org/cnpm/-/cnpm-{}.tgz",
+                    "bin": {
+                        "npm": "./bin/cnpm",
+                        "npx": "./node_modules/npm/bin/npx-cli.js"
+                    },
+                    "registry": {
+                        "type": "npm",
+                        "package": "cnpm"
+                    }
+                }
+            }
         }
     }
 }
